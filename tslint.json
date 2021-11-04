@@ -1,0 +1,44 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended"],
+  "jsRules": {},
+  "rules": {
+    "no-empty-interface": false,
+    "no-console": false,
+    "no-empty": false,
+    "no-unused-expression": false,
+    "no-shadowed-variable": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive",
+        "module-source-path": "full",
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "react",
+            "match": "^re.*",
+            "order": 1
+          },
+          {
+            "name": "ant",
+            "match": "^ant.*",
+            "order": 2
+          },
+          {
+            "name": "internal modules",
+            "match": "^\\..*",
+            "order": 4
+          },
+          {
+            "name": "third party imports",
+            "match": ".*",
+            "order": 3
+          }
+        ]
+      }
+    ]
+  },
+  "rulesDirectory": []
+}
