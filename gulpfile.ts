@@ -4,6 +4,7 @@ import { generalConfig } from './util/plugins/svgo/presets';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import { getIdentifier } from './util';
+import { assignAttrsAtTag } from './util/plugins/svg2Definition/transforms';
 
 const iconTemplate = readFileSync(
   resolve(__dirname, './util/templates/icon.ts.ejs'),
@@ -18,6 +19,9 @@ export default series(
     tmpDir: 'src/tmp',
     svgoConfig: generalConfig,
     template: iconTemplate,
+    extraNodeTransformFactories: [
+      assignAttrsAtTag('svg', { fill: 'currentColor' }),
+    ],
     mapToInterpolate: ({ name, content }) => ({
       identifier: getIdentifier({ name }),
       content,

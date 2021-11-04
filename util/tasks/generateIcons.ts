@@ -3,8 +3,9 @@ import SVGO from 'svgo';
 import rename from 'gulp-rename';
 import { UseTemplatePluginOptions } from '../plugins/useTemplate';
 import { useTemplate, svgo } from '../plugins';
+import { svg2Definition, SVG2DefinitionOptions } from '../plugins/svg2Definition';
 
-export interface GenerateIconsOptions extends UseTemplatePluginOptions {
+export interface GenerateIconsOptions extends UseTemplatePluginOptions, SVG2DefinitionOptions {
   from: string[];
   toDir: string;
   tmpDir: string;
@@ -21,10 +22,16 @@ export const generateIcons = (
     mapToInterpolate,
     filename,
     tmpDir,
+    extraNodeTransformFactories
   }: GenerateIconsOptions) =>
   function GenerateIcons() {
     return src(from)
       .pipe(svgo(svgoConfig))
+      .pipe(
+        svg2Definition({
+          extraNodeTransformFactories,
+        })
+      )
       .pipe(
         rename((file) => {
           if (file.basename) {
