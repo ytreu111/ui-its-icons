@@ -31,12 +31,12 @@ export default series(
   generateEntry({
     entryName: 'index.ts',
     from: ['src/icons/*.tsx'],
-    toDir: 'src/icons',
+    toDir: 'src',
     banner: '// This index.ts file is generated automatically.\n',
     template: `export { default as <%= identifier %> } from '<%= path %>';`,
     mapToInterpolate: ({ name: identifier }) => ({
       identifier,
-      path: `./${identifier}`,
+      path: `./icons/${identifier}`,
     }),
   }),
   clean(['src/svg']),
