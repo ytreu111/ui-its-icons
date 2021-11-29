@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const BaselineDynamicFeedIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const BaselineDynamicFeedIcon: FC<ComponentProps<typeof Icon>>;
 export default BaselineDynamicFeedIcon;

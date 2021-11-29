@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const SelectAllIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const SelectAllIcon: FC<ComponentProps<typeof Icon>>;
 export default SelectAllIcon;

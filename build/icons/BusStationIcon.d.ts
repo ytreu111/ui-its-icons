@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const BusStationIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const BusStationIcon: FC<ComponentProps<typeof Icon>>;
 export default BusStationIcon;

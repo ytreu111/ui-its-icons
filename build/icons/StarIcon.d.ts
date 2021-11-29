@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const StarIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const StarIcon: FC<ComponentProps<typeof Icon>>;
 export default StarIcon;

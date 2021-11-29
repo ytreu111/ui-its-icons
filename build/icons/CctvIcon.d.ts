@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const CctvIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const CctvIcon: FC<ComponentProps<typeof Icon>>;
 export default CctvIcon;

@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const PencilRulerIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const PencilRulerIcon: FC<ComponentProps<typeof Icon>>;
 export default PencilRulerIcon;

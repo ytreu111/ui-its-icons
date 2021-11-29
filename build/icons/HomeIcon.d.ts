@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const HomeIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const HomeIcon: FC<ComponentProps<typeof Icon>>;
 export default HomeIcon;

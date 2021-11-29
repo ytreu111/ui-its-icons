@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const PaletteIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const PaletteIcon: FC<ComponentProps<typeof Icon>>;
 export default PaletteIcon;

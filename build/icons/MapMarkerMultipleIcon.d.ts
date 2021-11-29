@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const MapMarkerMultipleIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const MapMarkerMultipleIcon: FC<ComponentProps<typeof Icon>>;
 export default MapMarkerMultipleIcon;

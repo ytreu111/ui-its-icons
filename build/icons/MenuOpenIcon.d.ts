@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const MenuOpenIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const MenuOpenIcon: FC<ComponentProps<typeof Icon>>;
 export default MenuOpenIcon;

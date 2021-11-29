@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const VectorCircleIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const VectorCircleIcon: FC<ComponentProps<typeof Icon>>;
 export default VectorCircleIcon;

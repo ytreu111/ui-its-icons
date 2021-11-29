@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const VectorPolylineEditIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const VectorPolylineEditIcon: FC<ComponentProps<typeof Icon>>;
 export default VectorPolylineEditIcon;

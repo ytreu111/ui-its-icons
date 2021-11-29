@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const AccessPointIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const AccessPointIcon: FC<ComponentProps<typeof Icon>>;
 export default AccessPointIcon;

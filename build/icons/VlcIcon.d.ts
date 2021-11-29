@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const VlcIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const VlcIcon: FC<ComponentProps<typeof Icon>>;
 export default VlcIcon;

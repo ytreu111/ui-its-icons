@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const EditIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const EditIcon: FC<ComponentProps<typeof Icon>>;
 export default EditIcon;

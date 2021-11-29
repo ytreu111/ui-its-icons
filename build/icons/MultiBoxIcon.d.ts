@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const MultiBoxIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const MultiBoxIcon: FC<ComponentProps<typeof Icon>>;
 export default MultiBoxIcon;

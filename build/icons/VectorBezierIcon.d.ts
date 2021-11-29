@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const VectorBezierIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const VectorBezierIcon: FC<ComponentProps<typeof Icon>>;
 export default VectorBezierIcon;

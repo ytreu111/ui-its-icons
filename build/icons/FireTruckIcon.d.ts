@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const FireTruckIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const FireTruckIcon: FC<ComponentProps<typeof Icon>>;
 export default FireTruckIcon;

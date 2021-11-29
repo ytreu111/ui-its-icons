@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const DeleteIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const DeleteIcon: FC<ComponentProps<typeof Icon>>;
 export default DeleteIcon;

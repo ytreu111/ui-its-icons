@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const PauseIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const PauseIcon: FC<ComponentProps<typeof Icon>>;
 export default PauseIcon;

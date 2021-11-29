@@ -1,3 +1,4 @@
-import { FC } from 'react';
-declare const CalendarIcon: FC;
+import { FC, ComponentProps } from 'react';
+import Icon from '@ant-design/icons';
+declare const CalendarIcon: FC<ComponentProps<typeof Icon>>;
 export default CalendarIcon;
